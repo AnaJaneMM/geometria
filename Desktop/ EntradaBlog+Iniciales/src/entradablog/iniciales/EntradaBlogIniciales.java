@@ -10,23 +10,28 @@ package entradablog.iniciales;
  * @author Ana
  */
 /*Clase para manejar las entradas de un blog.
- * La clase se creó el 21/3/1999 por Ana López.
+ * La clase se creó el 21/3/1999 por Ana.
  * Esta es la versión 2.3
  */
 //Modificar.
+
 public class EntradaBlogIniciales {
-//separador es el carácter que separa ENTRADA DE del
-	//nombre del autor
-	
+/**
+ * 
+ */
 	public static char separador=':';
 	private int id;
 	private String texto;
 	private String autor;
-	
+	/**
+         * 
+         * @param Ana
+         * @throws IllegalArgumentException 
+         */
 	//Constructor de la clase. recibe el número de entrada, el nombre del autor
 	//de la entrada y el texto que contiene la entrada. Si el número de entrada
 	//es negativo, lanza una excepción.
-	public EntradaBlogIniciales(int id,String autor,String texto)throws IllegalArgumentException{
+	public EntradaBlogIniciales(String autor)throws IllegalArgumentException{
 		if(id<=0){
                     throw new IllegalArgumentException("El id no puede ser negativo");
                 }
@@ -34,6 +39,10 @@ public class EntradaBlogIniciales {
 		this.autor=autor;
 		this.texto=texto;
 	}
+        /**
+         * 
+         * @return 
+         */
 	@Override
 	public String toString(){
 		String cad="";
@@ -43,6 +52,7 @@ public class EntradaBlogIniciales {
 	}
 	
 	//Devuelve el número de la entrada
+       
 	public int getId(){
 		return this.id;
 	}
