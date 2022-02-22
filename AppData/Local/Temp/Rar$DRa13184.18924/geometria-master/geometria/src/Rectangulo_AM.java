@@ -1,7 +1,7 @@
 /**
  * 
  * @author Ana Martinez Mateo
- * version:1.2
+ * @version:1.2
  */
 public class Rectangulo extends FiguraGeometrica {
 	private double l1;
@@ -33,7 +33,7 @@ public class Rectangulo extends FiguraGeometrica {
 	}
 	/**
          * 
-         * return el perímetro (2*11) + (2*12)
+         * @return el perímetro (2*11) + (2*12)
          */
 	@Override
 	public double perimetro() {
